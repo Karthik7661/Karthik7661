@@ -1,7 +1,7 @@
 <div align="center">
 
   <!-- Animated Header Banner -->
-  <img src="assets/header.svg" width="100%" alt="S Karthik Header Banner" />
+  <img src="assets/header.svg?v=2" width="100%" alt="S Karthik Header Banner" />
 
   <br />
 
@@ -11,7 +11,7 @@
   <br />
 
   <!-- Animated Glowing Divider -->
-  <img src="assets/separator.svg" width="100%" alt="Divider" />
+  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
 
 </div>
 
@@ -26,7 +26,7 @@ I enjoy solving real-world challenges through clean code, robust architectures, 
 - ⚡ Fun fact: I love transforming complex logic into simple, clean, and maintainable software architecture!
 
 <div align="center">
-  <img src="assets/separator.svg" width="100%" alt="Divider" />
+  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
 </div>
 
 ## 🛠️ Technology Stack
@@ -69,7 +69,7 @@ I enjoy solving real-world challenges through clean code, robust architectures, 
 </table>
 
 <div align="center">
-  <img src="assets/separator.svg" width="100%" alt="Divider" />
+  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
 </div>
 
 ## 🚀 Featured Projects
@@ -97,7 +97,7 @@ I enjoy solving real-world challenges through clean code, robust architectures, 
     *   **Stack**: `Python` • `PyTorch` • `ResNet-18` • `Module Integration`
 
 <div align="center">
-  <img src="assets/separator.svg" width="100%" alt="Divider" />
+  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
 </div>
 
 ## 📊 Live GitHub Activity & Stats
@@ -118,7 +118,7 @@ I enjoy solving real-world challenges through clean code, robust architectures, 
 </p>
 
 <div align="center">
-  <img src="assets/separator.svg" width="100%" alt="Divider" />
+  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
 </div>
 
 ## 🎮 Contribution Arena
@@ -131,7 +131,7 @@ Below is a live snake game tracking my coding activity. The snake eats food rela
 </p>
 
 <div align="center">
-  <img src="assets/separator.svg" width="100%" alt="Divider" />
+  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
 </div>
 
 ## 🤝 Let's Connect!
