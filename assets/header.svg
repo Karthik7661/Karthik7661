@@ -125,7 +125,7 @@
     <!-- Title -->
     <text class="animate-text" y="-15" font-size="34" font-weight="800" letter-spacing="4" fill="url(#text-gradient)" style="filter: drop-shadow(0px 4px 12px rgba(0, 242, 254, 0.15));">S KARTHIK</text>
     <!-- Subtitle / Focus Areas -->
-    <text class="animate-sub" y="25" font-size="15" font-weight="500" letter-spacing="2" fill="#94a3b8">AI • DEEP LEARNING • QUANTUM ML</text>
+    <text class="animate-sub" y="25" font-size="15" font-weight="500" letter-spacing="2" fill="#94a3b8">SOFTWARE ENGINEER</text>
     
     <!-- Minor status bar -->
     <rect class="animate-sub" x="-120" y="45" width="240" height="2" fill="url(#text-gradient)" opacity="0.6" />

@@ -6,7 +6,7 @@
   <br />
 
   <!-- Dynamic Typing Subheading -->
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00f2fe&center=true&vCenter=true&width=800&lines=AI+%26+Deep+Learning+Enthusiast;Quantum+Machine+Learning+Explorer;Full+Stack+Developer;Problem+Solver;Continuous+Learner" alt="Typing Animation" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=22&duration=3000&pause=1000&color=00f2fe&center=true&vCenter=true&width=800&lines=Software+Engineer;Full+Stack+Developer;Problem+Solver;System+Architect;Continuous+Learner" alt="Typing Animation" />
 
   <br />
 
@@ -17,13 +17,13 @@
 
 ## 🌌 About Me
 
-👋 Hello there! I'm **S Karthik** (Karthik7661), a passionate developer specializing in **Artificial Intelligence**, **Deep Learning**, and **Quantum Machine Learning**. 
+👋 Hello there! I'm **S Karthik** (Karthik7661), a passionate **Software Engineer** specializing in building scalable systems, high-performance web applications, and intuitive software solutions.
 
-I enjoy solving real-world challenges, particularly in healthcare and intelligent systems. I leverage hybrid quantum-classical neural networks to push the boundaries of medical image classification and automated diagnostic systems.
+I enjoy solving real-world challenges through clean code, robust architectures, and reliable design patterns. My experience ranges from crafting dynamic full-stack applications to optimizing system configurations, database pipelines, and server integrations.
 
-- 🧠 Currently researching: **Quantum FiLM modulation** and **QCNN architectures** for brain tumor detection.
-- 💻 Building: High-performance web applications and intuitive management systems.
-- ⚡ Fun fact: I bridges the gap between quantum mechanics and deep learning!
+- 💻 Building: High-performance web applications, robust backends, and responsive user interfaces.
+- 🛠️ Tech interests: Scalable system design, cloud technologies, database performance, and modern DevOps.
+- ⚡ Fun fact: I love transforming complex logic into simple, clean, and maintainable software architecture!
 
 <div align="center">
   <img src="assets/separator.svg" width="100%" alt="Divider" />
@@ -34,7 +34,7 @@ I enjoy solving real-world challenges, particularly in healthcare and intelligen
 <table width="100%">
   <tr>
     <td width="50%" valign="top">
-      <h4>💻 Languages & Core</h4>
+      <h4>💻 Programming Languages</h4>
       <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
       <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
@@ -43,29 +43,26 @@ I enjoy solving real-world challenges, particularly in healthcare and intelligen
       <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
     </td>
     <td width="50%" valign="top">
-      <h4>🧠 Deep Learning & AI</h4>
-      <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white" />
-      <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white" />
-      <img src="https://img.shields.io/badge/Keras-D00000?style=for-the-badge&logo=keras&logoColor=white" />
+      <h4>🌐 Frontend Development</h4>
+      <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+      <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
       <br />
-      <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white" />
-      <img src="https://img.shields.io/badge/NumPy-013243?style=for-the-badge&logo=numpy&logoColor=white" />
+      <img src="https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white" />
     </td>
   </tr>
   <tr>
     <td width="50%" valign="top">
-      <h4>⚛️ Quantum ML</h4>
-      <img src="https://img.shields.io/badge/PennyLane-54B4B9?style=for-the-badge&logo=pennylane&logoColor=white" />
-      <img src="https://img.shields.io/badge/Qiskit-6929C4?style=for-the-badge&logo=qiskit&logoColor=white" />
-    </td>
-    <td width="50%" valign="top">
-      <h4>🌐 Web & DevOps</h4>
-      <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
+      <h4>⚙️ Backend & Databases</h4>
       <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
       <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" />
-      <br />
+      <img src="https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white" />
+    </td>
+    <td width="50%" valign="top">
+      <h4>🛠️ DevOps & Tools</h4>
       <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
       <img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white" />
+      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
     </td>
   </tr>
 </table>
@@ -78,26 +75,25 @@ I enjoy solving real-world challenges, particularly in healthcare and intelligen
 
 📂 Here are some of my top open-source projects:
 
-### 🔬 Medical AI & Quantum Computing
-*   **[Brain-Tumor-QCNN](https://github.com/Karthik7661/Brain-Tumor-QCNN)** 
-    *   *Hybrid Quantum-Classical Neural Network (QCNN)* for automated brain tumor detection from MRI images.
-    *   **Stack**: `Python` • `PennyLane` • `TensorFlow` • `EfficientNet-B0`
-    *   *Highlight*: Combines deep classical feature extractions with a 4-qubit quantum variational classifier layer.
-*   **[Brain-Tumor-QCNN-ResNet](https://github.com/Karthik7661/Brain-Tumor-QCNN-ResNet)**
-    *   *Hybrid Quantum-Classical ResNet-18* using **Quantum FiLM** (Feature-wise Linear Modulation) layers.
-    *   **Stack**: `Python` • `PyTorch` • `ResNet-18` • `Quantum Circuits`
-    *   *Highlight*: Advanced multi-class MRI tumor detection with active quantum circuit integration.
-
-### 💼 Application Development & Web Systems
+### 💻 Systems & Web Applications
 *   **[Task-Management](https://github.com/Karthik7661/Task-Management)**
-    *   A dynamic, collaborative task organizing system for teams.
+    *   A dynamic, collaborative task management and workflow organizing platform.
     *   **Stack**: `TypeScript` • `React` • `Node.js` • `CSS Grid`
 *   **[Rervestion_system](https://github.com/Karthik7661/Rervestion_system)**
-    *   An optimized, robust reservation system for booking and managing resources.
+    *   An optimized, robust reservation API and database pipeline for secure resource booking.
     *   **Stack**: `TypeScript` • `Express` • `SQL`
 *   **[portfolio](https://github.com/Karthik7661/portfolio)**
-    *   My interactive, high-performance personal portfolio showcasing my projects and experience.
+    *   An interactive, responsive single-page application demonstrating clean UI/UX design.
     *   **Stack**: `TypeScript` • `React` • `TailwindCSS` • `Framer Motion`
+
+### 🔬 Advanced Algorithmic Systems
+*   **[Brain-Tumor-QCNN](https://github.com/Karthik7661/Brain-Tumor-QCNN)** 
+    *   A modular hybrid system model that maps and processes high-dimensional data arrays.
+    *   **Stack**: `Python` • `Quantum Libraries` • `TensorFlow` • `EfficientNet`
+    *   *Highlight*: Successfully implements custom multi-layered classical-to-quantum algorithmic processing grids.
+*   **[Brain-Tumor-QCNN-ResNet](https://github.com/Karthik7661/Brain-Tumor-QCNN-ResNet)**
+    *   A complex structured backend integrating ResNet pipelines with custom mathematical modulation models.
+    *   **Stack**: `Python` • `PyTorch` • `ResNet-18` • `Module Integration`
 
 <div align="center">
   <img src="assets/separator.svg" width="100%" alt="Divider" />
