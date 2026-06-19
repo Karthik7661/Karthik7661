@@ -35,12 +35,13 @@ I enjoy solving real-world challenges through clean code, robust architectures, 
   <tr>
     <td width="50%" valign="top">
       <h4>💻 Programming Languages</h4>
-      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
       <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" />
-      <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
-      <br />
+      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
       <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=for-the-badge&logo=c%2B%2B&logoColor=white" />
+      <br />
       <img src="https://img.shields.io/badge/SQL-4479A1?style=for-the-badge&logo=postgresql&logoColor=white" />
+      <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
+      <img src="https://img.shields.io/badge/JavaScript%20(Basic)-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
     </td>
     <td width="50%" valign="top">
       <h4>🌐 Frontend Development</h4>
