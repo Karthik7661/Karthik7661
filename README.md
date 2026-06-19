@@ -17,13 +17,9 @@
 
 ## 🌌 About Me
 
-👋 Hello there! I'm **S Karthik** (Karthik7661), a passionate **Software Engineer** specializing in building scalable systems, high-performance web applications, and intuitive software solutions.
+<img src="assets/about.svg?v=2" width="100%" alt="About S Karthik" />
 
-I enjoy solving real-world challenges through clean code, robust architectures, and reliable design patterns. My experience ranges from crafting dynamic full-stack applications to optimizing system configurations, database pipelines, and server integrations.
-
-- 💻 Building: High-performance web applications, robust backends, and responsive user interfaces.
-- 🛠️ Tech interests: Scalable system design, cloud technologies, database performance, and modern DevOps.
-- ⚡ Fun fact: I love transforming complex logic into simple, clean, and maintainable software architecture!
+<br />
 
 <div align="center">
   <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
@@ -126,6 +122,9 @@ I enjoy solving real-world challenges through clean code, robust architectures, 
 Below is a live snake game tracking my coding activity. The snake eats food relative to my commits!
 *(Refreshes automatically once a day)*
 
+> [!TIP]
+> **If the graph below appears empty or broken**, go to the **[Actions](https://github.com/Karthik7661/Karthik7661/actions)** tab in your repository, select **Generate Snake** workflow, and click **Run workflow** to generate the snake for the first time!
+
 <p align="center">
   <img src="https://raw.githubusercontent.com/Karthik7661/Karthik7661/output/github-contribution-grid-snake-dark.svg" alt="GitHub Snake Game Contribution Graph" width="97%" />
 </p>
@@ -146,5 +145,5 @@ Below is a live snake game tracking my coding activity. The snake eats food rela
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/normal-counter/?username=Karthik7661&color=00f2fe&style=flat-square" alt="Visitor Counter" />
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKarthik7661%2FKarthik7661&amp;count_bg=%2300f2fe&amp;title_bg=%231e293b&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=VIEWS&amp;edge_flat=false" alt="Visitor Counter" />
 </p>

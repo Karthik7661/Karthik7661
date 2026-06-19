@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="240" fill="none">
+  <style>
+    @keyframes wave {
+      0%, 100% { transform: rotate(0deg); }
+      50% { transform: rotate(15deg); }
+    }
+    @keyframes float-slow {
+      0%, 100% { transform: translateY(0px); }
+      50% { transform: translateY(-8px); }
+    }
+    @keyframes border-glow {
+      0%, 100% { border-color: rgba(0, 242, 254, 0.3); box-shadow: 0 0 15px rgba(0, 242, 254, 0.1); }
+      50% { border-color: rgba(168, 85, 247, 0.6); box-shadow: 0 0 25px rgba(168, 85, 247, 0.2); }
+    }
+    .container {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      background: linear-gradient(135deg, rgba(10, 11, 16, 0.9) 0%, rgba(20, 21, 30, 0.9) 100%);
+      border: 1.5px solid rgba(0, 242, 254, 0.3);
+      border-radius: 12px;
+      padding: 20px;
+      height: 196px;
+      color: #94a3b8;
+      font-size: 14px;
+      line-height: 1.6;
+      animation: border-glow 6s infinite ease-in-out;
+    }
+    .title {
+      font-size: 18px;
+      font-weight: 700;
+      color: #00f2fe;
+      margin-bottom: 10px;
+      display: flex;
+      align-items: center;
+    }
+    .waving-hand {
+      display: inline-block;
+      transform-origin: 70% 70%;
+      animation: wave 2.5s infinite ease-in-out;
+      margin-right: 8px;
+    }
+    .highlight {
+      color: #ffffff;
+      font-weight: 600;
+    }
+    .accent-text {
+      color: #a855f7;
+      font-weight: 600;
+    }
+    .bullet-icon {
+      color: #00f2fe;
+      margin-right: 6px;
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: 2.2fr 0.8fr;
+      gap: 20px;
+    }
+    .bullet-list {
+      margin-top: 8px;
+    }
+    .bullet-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+  </style>
+  <defs>
+    <linearGradient id="back-glow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00f2fe" stop-opacity="0.1" />
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+
+  <rect width="800" height="240" rx="14" fill="url(#back-glow)" />
+  
+  <foreignObject x="10" y="10" width="780" height="220">
+    <div xmlns="http://www.w3.org/1999/xhtml" class="container">
+      <div class="title">
+        <span class="waving-hand">👋</span> Hello there! I'm <span class="highlight" style="margin-left: 5px;">S Karthik</span> (Karthik7661)
+      </div>
+      <div class="grid-container">
+        <div>
+          I'm a passionate <span class="highlight">Software Engineer</span> specializing in crafting scalable systems, high-performance web applications, and modern software architectures. I focus on writing clean, optimized, and reliable code.
+          
+          <div class="bullet-list">
+            <div class="bullet-item">
+              <span class="bullet-icon">🚀</span> <span class="highlight">Building:</span> High-performance backends and interactive interfaces.
+            </div>
+            <div class="bullet-item">
+              <span class="bullet-icon">🛠️</span> <span class="highlight">Tech Interests:</span> Scale, Databases, and Automated CI/CD.
+            </div>
+            <div class="bullet-item">
+              <span class="bullet-icon">✨</span> <span class="highlight">Philosophy:</span> Clean code, optimization, and constant learning.
+            </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-direction: column; justify-content: center; align-items: center; border-left: 1px solid rgba(255,255,255,0.08); padding-left: 20px;">
+          <div style="font-size: 34px; animation: float-slow 3s infinite ease-in-out;">⚙️</div>
+          <div style="margin-top: 8px; font-weight: 600; color: #a855f7; font-size: 11px; letter-spacing: 1px; text-transform: uppercase;">Build &amp; Scale</div>
+        </div>
+      </div>
+    </div>
+  </foreignObject>
+</svg>
