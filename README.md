@@ -146,11 +146,9 @@
 ## 🤝 Let's Connect!
 
 <p align="center">
-  <img src="assets/connect.svg?v=2" width="100%" alt="Let's Connect Banner" />
+  <img src="assets/connect.svg?v=3" width="100%" alt="Let's Connect Banner" />
 </p>
 
 <p align="center">
-  <a href="https://github.com/Karthik7661/Karthik7661">
-    <img src="https://profile-counter.glitch.me/Karthik7661/count.svg" alt="Profile Views" />
-  </a>
+  <img src="https://visitor-badge.laobi.icu/badge?page_id=Karthik7661.Karthik7661&amp;color=00f2fe" alt="Profile Views" />
 </p>
