@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 80" width="100%" height="80" fill="none">
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d19" />
+      <stop offset="100%" stop-color="#06070c" />
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes pulse-blue {
+      0%, 100% { fill: #0a66c2; opacity: 0.8; filter: drop-shadow(0 0 2px #0a66c2); }
+      50% { fill: #0077b5; opacity: 1; filter: drop-shadow(0 0 6px #0077b5); }
+    }
+    .btn-bg-blue {
+      fill: rgba(10, 102, 194, 0.05);
+      stroke: rgba(10, 102, 194, 0.3);
+      stroke-width: 1.5;
+      rx: 10;
+    }
+    .btn-bg-blue:hover {
+      stroke: rgba(10, 102, 194, 0.8);
+      fill: rgba(10, 102, 194, 0.1);
+    }
+    .indicator-blue {
+      animation: pulse-blue 2s infinite ease-in-out;
+    }
+    .btn-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 13px;
+      fill: #ffffff;
+      letter-spacing: 0.5px;
+    }
+    .btn-sub {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 10px;
+      fill: #94a3b8;
+    }
+  </style>
+  <rect width="180" height="80" rx="12" fill="url(#bg-grad)" />
+  <rect class="btn-bg-blue" x="1" y="1" width="178" height="78" rx="11" />
+  <circle class="indicator-blue" cx="24" cy="40" r="4.5" />
+  <text class="btn-text" x="42" y="36">LinkedIn</text>
+  <text class="btn-sub" x="42" y="52">Connect @s-karthik-</text>
+</svg>

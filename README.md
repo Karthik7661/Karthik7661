@@ -143,10 +143,13 @@
 
 <p align="center">
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=skarthik7661@gmail.com" target="_blank">
-    <img src="assets/btn-email.svg?v=4" width="30%" alt="Email Me" />
+    <img src="assets/btn-email.svg?v=4" width="28%" alt="Email Me" />
   </a>
   <a href="https://github.com/Karthik7661" target="_blank">
-    <img src="assets/btn-github.svg?v=4" width="30%" alt="Follow Me" />
+    <img src="assets/btn-github.svg?v=4" width="28%" alt="Follow Me" />
+  </a>
+  <a href="https://www.linkedin.com/in/s-karthik-/" target="_blank">
+    <img src="assets/btn-linkedin.svg?v=4" width="28%" alt="LinkedIn Profile" />
   </a>
 </p>
 
