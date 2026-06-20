@@ -117,16 +117,12 @@
   <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
 </div>
 
-## 🎮 Contribution Arena
+## 🕹️ Developer Arcade
 
-Below is a live snake game tracking my coding activity. The snake eats food relative to my commits!
-*(Refreshes automatically once a day)*
-
-> [!TIP]
-> **If the graph below appears empty or broken**, go to the **[Actions](https://github.com/Karthik7661/Karthik7661/actions)** tab in your repository, select **Generate Snake** workflow, and click **Run workflow** to generate the snake for the first time!
+🎮 Welcome to the retro coding arena! Below is a simulated cyberpunk arcade cabinet (`BUG_BUSTER.EXE`) running a system debugging game. The developer ship is actively blasting code bugs in real-time!
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/Karthik7661/Karthik7661/output/github-contribution-grid-snake-dark.svg" alt="GitHub Snake Game Contribution Graph" width="97%" />
+  <img src="assets/arcade.svg?v=2" alt="Bug Buster Arcade Game" width="100%" />
 </p>
 
 <div align="center">
@@ -145,5 +141,5 @@ Below is a live snake game tracking my coding activity. The snake eats food rela
 </p>
 
 <p align="center">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKarthik7661%2FKarthik7661&amp;count_bg=%2300f2fe&amp;title_bg=%231e293b&amp;icon=&amp;icon_color=%23E7E7E7&amp;title=VIEWS&amp;edge_flat=false" alt="Visitor Counter" />
+  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKarthik7661%2FKarthik7661&count_bg=%2300f2fe&title_bg=%231e293b&icon=&icon_color=%23E7E7E7&title=VIEWS&edge_flat=false" alt="Visitor Counter" />
 </p>

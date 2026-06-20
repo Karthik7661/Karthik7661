@@ -1,0 +1,192 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 320" width="100%" height="320" style="background: #08090f; border-radius: 12px; border: 2px solid #1e293b; overflow: hidden;">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="neon-glow-teal" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+    <filter id="neon-glow-pink" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feMerge>
+        <feMergeNode in="blur" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes invader-move {
+      0%, 100% { transform: translateX(0px); }
+      50% { transform: translateX(40px); }
+    }
+    @keyframes ship-move {
+      0%, 100% { transform: translateX(0px); }
+      50% { transform: translateX(-60px); }
+    }
+    @keyframes laser-shoot-1 {
+      0% { translateY: 240px; opacity: 1; }
+      30%, 100% { translateY: 80px; opacity: 0; }
+    }
+    @keyframes laser-shoot-2 {
+      0% { translateY: 240px; opacity: 1; }
+      40%, 100% { translateY: 100px; opacity: 0; }
+    }
+    @keyframes bug-explode-1 {
+      0%, 25% { opacity: 1; transform: scale(1); }
+      30%, 100% { opacity: 0; transform: scale(1.8); }
+    }
+    @keyframes bug-explode-2 {
+      0%, 35% { opacity: 1; transform: scale(1); }
+      40%, 100% { opacity: 0; transform: scale(1.8); }
+    }
+    @keyframes scanline {
+      0% { transform: translateY(-320px); }
+      100% { transform: translateY(320px); }
+    }
+    @keyframes text-blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .invaders-group {
+      animation: invader-move 6s ease-in-out infinite;
+    }
+    .ship {
+      animation: ship-move 4s ease-in-out infinite;
+      transform-origin: 400px 250px;
+    }
+    .laser-1 {
+      animation: laser-shoot-1 3s infinite linear;
+    }
+    .laser-2 {
+      animation: laser-shoot-2 3s infinite linear;
+      animation-delay: 1.2s;
+    }
+    .bug-hit-1 {
+      transform-origin: 320px 85px;
+      animation: bug-explode-1 3s infinite ease-out;
+    }
+    .bug-hit-2 {
+      transform-origin: 360px 130px;
+      animation: bug-explode-2 3s infinite ease-out;
+      animation-delay: 1.2s;
+    }
+    .scanlines {
+      stroke: #000;
+      stroke-width: 1;
+      opacity: 0.15;
+    }
+    .grid-lines {
+      stroke: #1e1b4b;
+      stroke-width: 0.5;
+    }
+    .glow-text {
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      animation: text-blink 1.5s infinite;
+    }
+  </style>
+
+  <!-- Arcade Screen Grid Background -->
+  <g class="grid-lines">
+    <path d="M 0,40 L 800,40 M 0,80 L 800,80 M 0,120 L 800,120 M 0,160 L 800,160 M 0,200 L 800,200 M 0,240 L 800,240 M 0,280 L 800,280" />
+    <path d="M 80,0 L 80,320 M 160,0 L 160,320 M 240,0 L 240,320 M 320,0 L 320,320 M 400,0 L 400,320 M 480,0 L 480,320 M 560,0 L 560,320 M 640,0 L 640,320 M 720,0 L 720,320" />
+  </g>
+
+  <!-- Title & Game Status Header -->
+  <rect x="0" y="0" width="800" height="35" fill="#0b0c16" stroke="#1e293b" stroke-width="1" />
+  <text x="30" y="22" fill="#00f2fe" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" letter-spacing="1">ARCADE: BUG_BUSTER.EXE</text>
+  <text x="400" y="22" fill="#a855f7" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" text-anchor="middle" class="glow-text">INSERT COIN TO PLAY</text>
+  <text x="770" y="22" fill="#00f2fe" font-family="'Courier New', Courier, monospace" font-size="14" font-weight="bold" text-anchor="end" letter-spacing="1">SCORE: 013,370</text>
+
+  <!-- Space Invaders Action Arena -->
+  
+  <!-- Lasers (Moving up) -->
+  <rect class="laser-1" x="398" y="0" width="4" height="20" rx="2" fill="#ff007f" filter="url(#neon-glow-pink)" />
+  <rect class="laser-2" x="338" y="0" width="4" height="20" rx="2" fill="#ff007f" filter="url(#neon-glow-pink)" />
+
+  <!-- Invaders Group -->
+  <g class="invaders-group">
+    <!-- Row 1: Bugs (Teal) -->
+    <!-- Bug 1 -->
+    <g class="bug-hit-1">
+      <rect x="300" y="70" width="40" height="30" rx="6" fill="#00f2fe" opacity="0.8" filter="url(#neon-glow-teal)" />
+      <!-- Bug details -->
+      <circle cx="312" cy="85" r="3" fill="#08090f" />
+      <circle cx="328" cy="85" r="3" fill="#08090f" />
+      <path d="M 315,93 Q 320,90 325,93" stroke="#08090f" stroke-width="2" fill="none" />
+      <!-- Bug Labels -->
+      <text x="320" y="62" fill="#00f2fe" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">SyntaxError</text>
+    </g>
+
+    <!-- Bug 2 -->
+    <g>
+      <rect x="380" y="70" width="40" height="30" rx="6" fill="#00f2fe" opacity="0.8" />
+      <circle cx="392" cy="85" r="3" fill="#08090f" />
+      <circle cx="408" cy="85" r="3" fill="#08090f" />
+      <path d="M 395,93 Q 400,90 405,93" stroke="#08090f" stroke-width="2" fill="none" />
+      <text x="400" y="62" fill="#00f2fe" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">TypeError</text>
+    </g>
+
+    <!-- Bug 3 -->
+    <g>
+      <rect x="460" y="70" width="40" height="30" rx="6" fill="#00f2fe" opacity="0.8" />
+      <circle cx="472" cy="85" r="3" fill="#08090f" />
+      <circle cx="488" cy="85" r="3" fill="#08090f" />
+      <path d="M 475,93 Q 480,90 485,93" stroke="#08090f" stroke-width="2" fill="none" />
+      <text x="480" y="62" fill="#00f2fe" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">NullPointer</text>
+    </g>
+
+    <!-- Row 2: More Bugs (Purple) -->
+    <!-- Bug 4 -->
+    <g>
+      <rect x="260" y="115" width="40" height="30" rx="6" fill="#a855f7" opacity="0.8" />
+      <circle cx="272" cy="130" r="3" fill="#08090f" />
+      <circle cx="288" cy="130" r="3" fill="#08090f" />
+      <path d="M 275,138 Q 280,135 285,138" stroke="#08090f" stroke-width="2" fill="none" />
+      <text x="280" y="108" fill="#a855f7" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Bug</text>
+    </g>
+
+    <!-- Bug 5 (Exploding/Hit) -->
+    <g class="bug-hit-2">
+      <rect x="340" y="115" width="40" height="30" rx="6" fill="#a855f7" opacity="0.8" filter="url(#neon-glow-pink)" />
+      <circle cx="352" cy="130" r="3" fill="#08090f" />
+      <circle cx="368" cy="130" r="3" fill="#08090f" />
+      <path d="M 355,138 Q 360,135 365,138" stroke="#08090f" stroke-width="2" fill="none" />
+      <text x="360" y="108" fill="#a855f7" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Overflow</text>
+    </g>
+
+    <!-- Bug 6 -->
+    <g>
+      <rect x="420" y="115" width="40" height="30" rx="6" fill="#a855f7" opacity="0.8" />
+      <circle cx="432" cy="130" r="3" fill="#08090f" />
+      <circle cx="448" cy="130" r="3" fill="#08090f" />
+      <path d="M 435,138 Q 440,135 445,138" stroke="#08090f" stroke-width="2" fill="none" />
+      <text x="440" y="108" fill="#a855f7" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">MemoryLeak</text>
+    </g>
+
+    <!-- Bug 7 -->
+    <g>
+      <rect x="500" y="115" width="40" height="30" rx="6" fill="#a855f7" opacity="0.8" />
+      <circle cx="512" cy="130" r="3" fill="#08090f" />
+      <circle cx="528" cy="130" r="3" fill="#08090f" />
+      <path d="M 515,138 Q 520,135 525,138" stroke="#08090f" stroke-width="2" fill="none" />
+      <text x="520" y="108" fill="#a855f7" font-family="Arial, sans-serif" font-size="9" text-anchor="middle">Bug</text>
+    </g>
+  </g>
+
+  <!-- Player Ship (Developer) -->
+  <g class="ship">
+    <!-- Ship body -->
+    <polygon points="380,275 400,240 420,275 410,275 400,265 390,275" fill="#ff007f" filter="url(#neon-glow-pink)" />
+    <!-- Wings/Details -->
+    <rect x="388" y="270" width="24" height="8" rx="2" fill="#00f2fe" />
+    <text x="400" y="292" fill="#ffffff" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle">DEVELOPER</text>
+  </g>
+
+  <!-- Screen Scanline Overlay -->
+  <line x1="0" y1="0" x2="800" y2="320" class="scanlines" style="display: none;" />
+</svg>
