@@ -33,6 +33,32 @@
   <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
 </div>
 
+## 🤝 Let's Connect!
+
+*Feel free to reach out for collaborations, inquiries, or just to say hello!*
+
+<p align="center">
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=skarthik7661@gmail.com" target="_blank">
+    <img src="assets/btn-email.svg?v=4" width="28%" alt="Email Me" />
+  </a>
+  <a href="https://github.com/Karthik7661" target="_blank">
+    <img src="assets/btn-github.svg?v=4" width="28%" alt="Follow Me" />
+  </a>
+  <a href="https://www.linkedin.com/in/s-karthik-/" target="_blank">
+    <img src="assets/btn-linkedin.svg?v=4" width="28%" alt="LinkedIn Profile" />
+  </a>
+</p>
+
+<p align="center">
+  <b>👤 Profile Views</b>
+  <br />
+  <img src="https://count.getloli.com/get/@Karthik7661?theme=moebooru" alt="Views Counter" />
+</p>
+
+<div align="center">
+  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
+</div>
+
 ## 🛠️ Technology Stack
 
 <table width="100%">
@@ -133,32 +159,4 @@
   <img src="assets/arcade.svg?v=2" alt="Bug Buster Arcade Game" width="100%" />
 </p>
 
-<div align="center">
-  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
-</div>
 
-## 🤝 Let's Connect!
-
-*Feel free to reach out for collaborations, inquiries, or just to say hello!*
-
-<p align="center">
-  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=skarthik7661@gmail.com" target="_blank">
-    <img src="assets/btn-email.svg?v=4" width="28%" alt="Email Me" />
-  </a>
-  <a href="https://github.com/Karthik7661" target="_blank">
-    <img src="assets/btn-github.svg?v=4" width="28%" alt="Follow Me" />
-  </a>
-  <a href="https://www.linkedin.com/in/s-karthik-/" target="_blank">
-    <img src="assets/btn-linkedin.svg?v=4" width="28%" alt="LinkedIn Profile" />
-  </a>
-</p>
-
-<div align="center">
-  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
-</div>
-
-<p align="center">
-  <b>👤 Profile Views</b>
-  <br />
-  <img src="https://count.getloli.com/get/@Karthik7661?theme=moebooru" alt="Views Counter" />
-</p>
