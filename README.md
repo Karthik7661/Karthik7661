@@ -140,9 +140,15 @@
 ## 🤝 Let's Connect!
 
 <p align="center">
-  <img src="assets/connect.svg?v=3" width="100%" alt="Let's Connect Banner" />
+  <img src="assets/connect-header.svg?v=3" width="48%" alt="Let's Connect" />
+  <a href="https://mail.google.com/mail/?view=cm&fs=1&to=skarthik7661@gmail.com" target="_blank">
+    <img src="assets/btn-email.svg?v=3" width="23%" alt="Email Me" />
+  </a>
+  <a href="https://github.com/users/Karthik7661/follow" target="_blank">
+    <img src="assets/btn-github.svg?v=3" width="23%" alt="Follow Me" />
+  </a>
 </p>
 
 <p align="center">
-  <img src="https://visitor-badge.laobi.icu/badge?page_id=Karthik7661.Karthik7661&amp;color=00f2fe" alt="Profile Views" />
+  <img src="assets/visitor-card.svg?v=3" width="50%" alt="Profile Views" />
 </p>
