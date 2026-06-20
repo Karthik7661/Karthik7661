@@ -1,0 +1,306 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="100%" height="420" style="background: linear-gradient(135deg, #0a0b10 0%, #12131c 100%); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05);">
+  <defs>
+    <!-- Glow Filters -->
+    <filter id="glow-teal" x="-20%" y="-40%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#00f2fe" flood-opacity="0.7" />
+    </filter>
+    <filter id="glow-cyan" x="-20%" y="-40%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#4facfe" flood-opacity="0.7" />
+    </filter>
+    <filter id="glow-purple" x="-20%" y="-40%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#a855f7" flood-opacity="0.7" />
+    </filter>
+    <filter id="glow-orange" x="-20%" y="-40%" width="140%" height="180%">
+      <feDropShadow dx="0" dy="0" stdDeviation="3" flood-color="#f97316" flood-opacity="0.7" />
+    </filter>
+
+    <!-- Gradients -->
+    <linearGradient id="grad-teal" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00f2fe" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="grad-cyan" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4facfe" />
+      <stop offset="100%" stop-color="#00f2fe" />
+    </linearGradient>
+    <linearGradient id="grad-purple" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7" />
+      <stop offset="100%" stop-color="#4facfe" />
+    </linearGradient>
+    <linearGradient id="grad-orange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f97316" />
+      <stop offset="100%" stop-color="#a855f7" />
+    </linearGradient>
+  </defs>
+
+  <style>
+    /* CSS Keyframe Animations */
+    @keyframes load-java { from { width: 0; } to { width: 119px; } }
+    @keyframes load-sql { from { width: 0; } to { width: 112px; } }
+    @keyframes load-python { from { width: 0; } to { width: 84px; } }
+    @keyframes load-react { from { width: 0; } to { width: 112px; } }
+    @keyframes load-html5 { from { width: 0; } to { width: 126px; } }
+    @keyframes load-css { from { width: 0; } to { width: 119px; } }
+    @keyframes load-node { from { width: 0; } to { width: 112px; } }
+    @keyframes load-express { from { width: 0; } to { width: 105px; } }
+    @keyframes load-mysql { from { width: 0; } to { width: 112px; } }
+    @keyframes load-mongo { from { width: 0; } to { width: 105px; } }
+    @keyframes load-git { from { width: 0; } to { width: 119px; } }
+    @keyframes load-github { from { width: 0; } to { width: 126px; } }
+
+    @keyframes corner-pulse {
+      0%, 100% { stroke: #00f2fe; filter: drop-shadow(0 0 1px #00f2fe); }
+      50% { stroke: #a855f7; filter: drop-shadow(0 0 3px #a855f7); }
+    }
+    @keyframes dash-flow {
+      to { stroke-dashoffset: -20; }
+    }
+    @keyframes scan {
+      0% { transform: translateY(0); opacity: 0; }
+      10% { opacity: 0.4; }
+      90% { opacity: 0.4; }
+      100% { transform: translateY(420px); opacity: 0; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0.3; filter: drop-shadow(0 0 1px #00f2fe); }
+      50% { opacity: 1; filter: drop-shadow(0 0 4px #00f2fe); }
+    }
+    @keyframes hover-card {
+      0%, 100% { stroke: rgba(255, 255, 255, 0.05); }
+      50% { stroke: rgba(0, 242, 254, 0.2); }
+    }
+
+    .corner-bracket {
+      stroke-width: 1.5;
+      fill: none;
+      animation: corner-pulse 4s infinite ease-in-out;
+    }
+    .circuit-flow {
+      stroke-dasharray: 4, 16;
+      animation: dash-flow 1.8s linear infinite;
+    }
+    .scanline {
+      animation: scan 10s linear infinite;
+      filter: drop-shadow(0 0 3px #00f2fe);
+    }
+    .status-dot {
+      fill: #00f2fe;
+      animation: blink 2.5s infinite ease-in-out;
+    }
+    .dot-delay-1 { animation-delay: 0.6s; }
+    .dot-delay-2 { animation-delay: 1.2s; }
+    .dot-delay-3 { animation-delay: 1.8s; }
+
+    .panel-card {
+      fill: rgba(10, 11, 16, 0.7);
+      animation: hover-card 6s infinite ease-in-out;
+    }
+    .card-1 { animation-delay: 0s; }
+    .card-2 { animation-delay: 1.5s; }
+    .card-3 { animation-delay: 3s; }
+    .card-4 { animation-delay: 4.5s; }
+
+    .progress-bar {
+      transform-origin: left;
+      animation-duration: 2.2s;
+      animation-timing-function: cubic-bezier(0.1, 1, 0.1, 1);
+      animation-fill-mode: forwards;
+    }
+
+    /* Individual Bar Bindings */
+    .bar-java { animation-name: load-java; filter: url(#glow-teal); }
+    .bar-sql { animation-name: load-sql; filter: url(#glow-teal); }
+    .bar-python { animation-name: load-python; filter: url(#glow-teal); }
+    .bar-react { animation-name: load-react; filter: url(#glow-cyan); }
+    .bar-html5 { animation-name: load-html5; filter: url(#glow-cyan); }
+    .bar-css { animation-name: load-css; filter: url(#glow-cyan); }
+    .bar-node { animation-name: load-node; filter: url(#glow-purple); }
+    .bar-express { animation-name: load-express; filter: url(#glow-purple); }
+    .bar-mysql { animation-name: load-mysql; filter: url(#glow-purple); }
+    .bar-mongo { animation-name: load-mongo; filter: url(#glow-purple); }
+    .bar-git { animation-name: load-git; filter: url(#glow-orange); }
+    .bar-github { animation-name: load-github; filter: url(#glow-orange); }
+  </style>
+
+  <!-- Background Grid -->
+  <g stroke="#4facfe" stroke-width="0.5" opacity="0.05">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250 M 0,300 L 800,300 M 0,350 L 800,350 M 0,400 L 800,400" />
+    <path d="M 100,0 L 100,420 M 200,0 L 200,420 M 300,0 L 300,420 M 400,0 L 400,420 M 500,0 L 500,420 M 600,0 L 600,420 M 700,0 L 700,420" />
+  </g>
+
+  <!-- Circuit Connections in Background -->
+  <g stroke-width="1.5" fill="none">
+    <!-- Static Circuit Paths -->
+    <path d="M 390,110 L 410,110 M 390,310 L 410,310 M 205,200 L 205,220 M 595,200 L 595,220" stroke="rgba(255, 255, 255, 0.05)" />
+    <!-- Animated Light Pulses -->
+    <path class="circuit-flow" d="M 390,110 L 410,110" stroke="#00f2fe" />
+    <path class="circuit-flow" d="M 205,200 L 205,220" stroke="#a855f7" style="animation-delay: 0.5s;" />
+    <path class="circuit-flow" d="M 595,220 L 595,200" stroke="#4facfe" style="animation-delay: 1s;" />
+    <path class="circuit-flow" d="M 410,310 L 390,310" stroke="#f97316" style="animation-delay: 1.5s;" />
+  </g>
+
+  <!-- Card 1: Programming Languages -->
+  <g>
+    <!-- Background Card Frame -->
+    <rect class="panel-card card-1" x="20" y="20" width="370" height="180" rx="8" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+    
+    <!-- L-Corner Brackets -->
+    <path class="corner-bracket" d="M 20,32 L 20,20 L 32,20" />
+    <path class="corner-bracket" d="M 378,20 L 390,20 L 390,32" />
+    <path class="corner-bracket" d="M 20,188 L 20,200 L 32,200" />
+    <path class="corner-bracket" d="M 378,200 L 390,200 L 390,188" />
+
+    <!-- Icon: Code Brackets </> -->
+    <path d="M 44,39 L 37,44 L 44,49 M 54,39 L 61,44 L 54,49 M 51,36 L 47,52" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    
+    <!-- Header Text -->
+    <text x="72" y="49" font-size="13" font-weight="bold" fill="#ffffff" letter-spacing="0.8">PROGRAMMING LANGUAGES</text>
+    <circle class="status-dot" cx="365" cy="44" r="3" />
+    <line x1="35" y1="58" x2="375" y2="58" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- Rows -->
+    <!-- Row 1: Java -->
+    <text x="45" y="87" font-size="13" font-weight="600" fill="#acbac7">Java</text>
+    <rect x="180" y="79" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-java" x="180" y="79" height="7" rx="3.5" fill="url(#grad-teal)" />
+    <text x="335" y="87" font-size="11" font-family="monospace" fill="#00f2fe" opacity="0.8">85%</text>
+
+    <!-- Row 2: SQL -->
+    <text x="45" y="127" font-size="13" font-weight="600" fill="#acbac7">SQL</text>
+    <rect x="180" y="119" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-sql" x="180" y="119" height="7" rx="3.5" fill="url(#grad-teal)" />
+    <text x="335" y="127" font-size="11" font-family="monospace" fill="#00f2fe" opacity="0.8">80%</text>
+
+    <!-- Row 3: Python -->
+    <text x="45" y="167" font-size="13" font-weight="600" fill="#acbac7">Python (Basic)</text>
+    <rect x="180" y="159" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-python" x="180" y="159" height="7" rx="3.5" fill="url(#grad-teal)" />
+    <text x="335" y="167" font-size="11" font-family="monospace" fill="#00f2fe" opacity="0.8">60%</text>
+  </g>
+
+  <!-- Card 2: Frontend Development -->
+  <g>
+    <!-- Background Card Frame -->
+    <rect class="panel-card card-2" x="410" y="20" width="370" height="180" rx="8" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+    
+    <!-- L-Corner Brackets -->
+    <path class="corner-bracket" d="M 410,32 L 410,20 L 422,20" />
+    <path class="corner-bracket" d="M 768,20 L 780,20 L 780,32" />
+    <path class="corner-bracket" d="M 410,188 L 410,200 L 422,200" />
+    <path class="corner-bracket" d="M 768,200 L 780,200 L 780,188" />
+
+    <!-- Icon: Desktop Monitor -->
+    <path d="M 428,37 h 24 v 14 h -24 z M 434,51 v 4 h 12 v -4 M 430,55 h 20" stroke="#4facfe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+
+    <!-- Header Text -->
+    <text x="462" y="49" font-size="13" font-weight="bold" fill="#ffffff" letter-spacing="0.8">FRONTEND DEVELOPMENT</text>
+    <circle class="status-dot dot-delay-1" cx="755" cy="44" r="3" />
+    <line x1="425" y1="58" x2="765" y2="58" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- Rows -->
+    <!-- Row 1: React -->
+    <text x="435" y="87" font-size="13" font-weight="600" fill="#acbac7">React</text>
+    <rect x="570" y="79" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-react" x="570" y="79" height="7" rx="3.5" fill="url(#grad-cyan)" />
+    <text x="725" y="87" font-size="11" font-family="monospace" fill="#4facfe" opacity="0.8">80%</text>
+
+    <!-- Row 2: HTML5 -->
+    <text x="435" y="127" font-size="13" font-weight="600" fill="#acbac7">HTML5</text>
+    <rect x="570" y="119" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-html5" x="570" y="119" height="7" rx="3.5" fill="url(#grad-cyan)" />
+    <text x="725" y="127" font-size="11" font-family="monospace" fill="#4facfe" opacity="0.8">90%</text>
+
+    <!-- Row 3: CSS -->
+    <text x="435" y="167" font-size="13" font-weight="600" fill="#acbac7">CSS</text>
+    <rect x="570" y="159" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-css" x="570" y="159" height="7" rx="3.5" fill="url(#grad-cyan)" />
+    <text x="725" y="167" font-size="11" font-family="monospace" fill="#4facfe" opacity="0.8">85%</text>
+  </g>
+
+  <!-- Card 3: Backend & Databases -->
+  <g>
+    <!-- Background Card Frame -->
+    <rect class="panel-card card-3" x="20" y="220" width="370" height="180" rx="8" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+    
+    <!-- L-Corner Brackets -->
+    <path class="corner-bracket" d="M 20,232 L 20,220 L 32,220" />
+    <path class="corner-bracket" d="M 378,220 L 390,220 L 390,232" />
+    <path class="corner-bracket" d="M 20,388 L 20,400 L 32,400" />
+    <path class="corner-bracket" d="M 378,400 L 390,400 L 390,388" />
+
+    <!-- Icon: Database cylinder stack -->
+    <ellipse cx="50" cy="239" rx="9" ry="3" stroke="#a855f7" stroke-width="2" fill="none" />
+    <path d="M 41,239 v 4 c 0,1.8 4,3 9,3 s 9,-1.2 9,-3 v -4" stroke="#a855f7" stroke-width="2" fill="none" />
+    <path d="M 41,245 v 4 c 0,1.8 4,3 9,3 s 9,-1.2 9,-3 v -4" stroke="#a855f7" stroke-width="2" fill="none" />
+    <path d="M 41,251 v 4 c 0,1.8 4,3 9,3 s 9,-1.2 9,-3 v -4" stroke="#a855f7" stroke-width="2" fill="none" />
+
+    <!-- Header Text -->
+    <text x="72" y="249" font-size="13" font-weight="bold" fill="#ffffff" letter-spacing="0.8">BACKEND &amp; DATABASES</text>
+    <circle class="status-dot dot-delay-2" cx="365" cy="244" r="3" />
+    <line x1="35" y1="258" x2="375" y2="258" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- Rows (4 items, custom compact vertical spacing) -->
+    <!-- Row 1: Node.js -->
+    <text x="45" y="287" font-size="13" font-weight="600" fill="#acbac7">Node.js</text>
+    <rect x="180" y="279" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-node" x="180" y="279" height="7" rx="3.5" fill="url(#grad-purple)" />
+    <text x="335" y="287" font-size="11" font-family="monospace" fill="#a855f7" opacity="0.8">80%</text>
+
+    <!-- Row 2: Express -->
+    <text x="45" y="317" font-size="13" font-weight="600" fill="#acbac7">Express</text>
+    <rect x="180" y="309" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-express" x="180" y="309" height="7" rx="3.5" fill="url(#grad-purple)" />
+    <text x="335" y="317" font-size="11" font-family="monospace" fill="#a855f7" opacity="0.8">75%</text>
+
+    <!-- Row 3: MySQL -->
+    <text x="45" y="347" font-size="13" font-weight="600" fill="#acbac7">MySQL</text>
+    <rect x="180" y="339" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-mysql" x="180" y="339" height="7" rx="3.5" fill="url(#grad-purple)" />
+    <text x="335" y="347" font-size="11" font-family="monospace" fill="#a855f7" opacity="0.8">80%</text>
+
+    <!-- Row 4: MongoDB -->
+    <text x="45" y="377" font-size="13" font-weight="600" fill="#acbac7">MongoDB</text>
+    <rect x="180" y="369" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-mongo" x="180" y="369" height="7" rx="3.5" fill="url(#grad-purple)" />
+    <text x="335" y="377" font-size="11" font-family="monospace" fill="#a855f7" opacity="0.8">75%</text>
+  </g>
+
+  <!-- Card 4: DevOps & Tools -->
+  <g>
+    <!-- Background Card Frame -->
+    <rect class="panel-card card-4" x="410" y="220" width="370" height="180" rx="8" stroke="rgba(255, 255, 255, 0.05)" stroke-width="1" />
+    
+    <!-- L-Corner Brackets -->
+    <path class="corner-bracket" d="M 410,232 L 410,220 L 422,220" />
+    <path class="corner-bracket" d="M 768,220 L 780,220 L 780,232" />
+    <path class="corner-bracket" d="M 410,388 L 410,400 L 422,400" />
+    <path class="corner-bracket" d="M 768,400 L 780,400 L 780,388" />
+
+    <!-- Icon: Git branch structure -->
+    <circle cx="434" cy="253" r="2.5" stroke="#f97316" stroke-width="2" fill="#0a0b10" />
+    <circle cx="434" cy="237" r="2.5" stroke="#f97316" stroke-width="2" fill="#0a0b10" />
+    <circle cx="446" cy="241" r="2.5" stroke="#f97316" stroke-width="2" fill="#0a0b10" />
+    <path d="M 434,250 V 240 M 434,249 Q 434,243 443,241" stroke="#f97316" stroke-width="2" fill="none" stroke-linecap="round" />
+
+    <!-- Header Text -->
+    <text x="462" y="249" font-size="13" font-weight="bold" fill="#ffffff" letter-spacing="0.8">DEVOPS &amp; TOOLS</text>
+    <circle class="status-dot dot-delay-3" cx="755" cy="244" r="3" />
+    <line x1="425" y1="258" x2="765" y2="258" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- Rows (2 items, spaced out evenly) -->
+    <!-- Row 1: Git -->
+    <text x="435" y="302" font-size="13" font-weight="600" fill="#acbac7">Git</text>
+    <rect x="570" y="294" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-git" x="570" y="294" height="7" rx="3.5" fill="url(#grad-orange)" />
+    <text x="725" y="302" font-size="11" font-family="monospace" fill="#f97316" opacity="0.8">85%</text>
+
+    <!-- Row 2: GitHub -->
+    <text x="435" y="352" font-size="13" font-weight="600" fill="#acbac7">GitHub</text>
+    <rect x="570" y="344" width="140" height="7" rx="3.5" fill="#161b22" />
+    <rect class="progress-bar bar-github" x="570" y="344" height="7" rx="3.5" fill="url(#grad-orange)" />
+    <text x="725" y="352" font-size="11" font-family="monospace" fill="#f97316" opacity="0.8">90%</text>
+  </g>
+
+  <!-- Horizontal Laser Scan Line -->
+  <line class="scanline" x1="0" y1="0" x2="800" y2="0" stroke="rgba(0, 242, 254, 0.12)" stroke-width="1.5" />
+</svg>

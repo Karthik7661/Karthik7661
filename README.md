@@ -61,38 +61,9 @@
 
 ## 🛠️ Technology Stack
 
-<table width="100%">
-  <tr>
-    <td width="50%" valign="top">
-      <h4>💻 Programming Languages</h4>
-      <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white" />
-      <img src="https://img.shields.io/badge/SQL-00758F?style=for-the-badge&logo=mysql&logoColor=white" />
-      <br />
-      <img src="https://img.shields.io/badge/Python%20(Basic)-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-    </td>
-    <td width="50%" valign="top">
-      <h4>🌐 Frontend Development</h4>
-      <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" />
-      <img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
-      <img src="https://img.shields.io/badge/CSS-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h4>⚙️ Backend & Databases</h4>
-      <img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
-      <img src="https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white" />
-      <br />
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-      <img src="https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white" />
-    </td>
-    <td width="50%" valign="top">
-      <h4>🛠️ DevOps & Tools</h4>
-      <img src="https://img.shields.io/badge/Git-F05033?style=for-the-badge&logo=git&logoColor=white" />
-      <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" />
-    </td>
-  </tr>
-</table>
+<p align="center">
+  <img src="assets/techstack.svg?v=2" width="100%" alt="Technology Stack Dashboard" />
+</p>
 
 <div align="center">
   <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
