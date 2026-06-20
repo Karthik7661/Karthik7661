@@ -146,14 +146,11 @@
 ## 🤝 Let's Connect!
 
 <p align="center">
-  <a href="mailto:skarthik7661@gmail.com">
-    <img src="https://img.shields.io/badge/Email-skarthik7661%40gmail.com-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Direct" />
-  </a>
-  <a href="https://github.com/Karthik7661">
-    <img src="https://img.shields.io/badge/GitHub-Karthik7661-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Profile" />
-  </a>
+  <img src="assets/connect.svg?v=2" width="100%" alt="Let's Connect Banner" />
 </p>
 
 <p align="center">
-  <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKarthik7661%2FKarthik7661&count_bg=%2300f2fe&title_bg=%231e293b&icon=&icon_color=%23E7E7E7&title=VIEWS&edge_flat=false" alt="Visitor Counter" />
+  <a href="https://github.com/Karthik7661/Karthik7661">
+    <img src="https://profile-counter.glitch.me/Karthik7661/count.svg" alt="Profile Views" />
+  </a>
 </p>
