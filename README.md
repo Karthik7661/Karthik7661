@@ -78,27 +78,31 @@
 
 ## 🚀 Featured Projects
 
-📂 Here are some of my top open-source projects:
+📂 Click on any card below to explore the codebase and features!
 
-### 💻 Systems & Web Applications
-*   **[Task-Management](https://github.com/Karthik7661/Task-Management)**
-    *   A dynamic, collaborative task management and workflow organizing platform.
-    *   **Stack**: `TypeScript` • `React` • `Node.js` • `CSS Grid`
-*   **[Rervestion_system](https://github.com/Karthik7661/Rervestion_system)**
-    *   An optimized, robust reservation API and database pipeline for secure resource booking.
-    *   **Stack**: `TypeScript` • `Express` • `SQL`
-*   **[portfolio](https://github.com/Karthik7661/portfolio)**
-    *   An interactive, responsive single-page application demonstrating clean UI/UX design.
-    *   **Stack**: `TypeScript` • `React` • `TailwindCSS` • `Framer Motion`
+<p align="center">
+  <a href="https://github.com/Karthik7661/Task-Management" target="_blank">
+    <img src="assets/project-task.svg?v=2" width="48%" alt="Task Management Card" />
+  </a>
+  <a href="https://github.com/Karthik7661/Rervestion_system" target="_blank">
+    <img src="assets/project-reservation.svg?v=2" width="48%" alt="Reservation System Card" />
+  </a>
+</p>
 
-### 🔬 Advanced Algorithmic Systems
-*   **[Brain-Tumor-QCNN](https://github.com/Karthik7661/Brain-Tumor-QCNN)** 
-    *   A modular hybrid system model that maps and processes high-dimensional data arrays.
-    *   **Stack**: `Python` • `Quantum Libraries` • `TensorFlow` • `EfficientNet`
-    *   *Highlight*: Successfully implements custom multi-layered classical-to-quantum algorithmic processing grids.
-*   **[Brain-Tumor-QCNN-ResNet](https://github.com/Karthik7661/Brain-Tumor-QCNN-ResNet)**
-    *   A complex structured backend integrating ResNet pipelines with custom mathematical modulation models.
-    *   **Stack**: `Python` • `PyTorch` • `ResNet-18` • `Module Integration`
+<p align="center">
+  <a href="https://github.com/Karthik7661/portfolio" target="_blank">
+    <img src="assets/project-portfolio.svg?v=2" width="48%" alt="Portfolio Card" />
+  </a>
+  <a href="https://github.com/Karthik7661/Brain-Tumor-QCNN" target="_blank">
+    <img src="assets/project-qcnn.svg?v=2" width="48%" alt="Brain Tumor QCNN Card" />
+  </a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/Karthik7661/Brain-Tumor-QCNN-ResNet" target="_blank">
+    <img src="assets/project-resnet.svg?v=2" width="48%" alt="Brain Tumor ResNet Card" />
+  </a>
+</p>
 
 <div align="center">
   <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />

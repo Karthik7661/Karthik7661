@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 160" width="100%" height="160" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d19" />
+      <stop offset="100%" stop-color="#06070c" />
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes pulse {
+      0%, 100% { stroke: rgba(0, 242, 254, 0.4); filter: drop-shadow(0 0 2px rgba(0, 242, 254, 0.2)); }
+      50% { stroke: rgba(79, 172, 254, 0.8); filter: drop-shadow(0 0 8px rgba(79, 172, 254, 0.4)); }
+    }
+    .card-border {
+      stroke-width: 1.5;
+      animation: pulse 4s infinite ease-in-out;
+    }
+    .text-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      fill: #ffffff;
+    }
+    .text-desc {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 12px;
+      fill: #94a3b8;
+    }
+    .badge-rect {
+      fill: rgba(0, 242, 254, 0.1);
+      stroke: rgba(0, 242, 254, 0.2);
+      stroke-width: 1;
+      rx: 4;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      fill: #00f2fe;
+    }
+  </style>
+  <rect width="380" height="160" rx="12" fill="url(#bg)" stroke="#1e293b" stroke-width="1" />
+  <rect class="card-border" x="1" y="1" width="378" height="158" rx="11" fill="none" />
+
+  <!-- Icon (Browser Web Page) -->
+  <g transform="translate(24, 24)" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="0" y="2" width="22" height="22" rx="3" fill="none" />
+    <circle cx="5" cy="7" r="1" fill="#00f2fe" />
+    <circle cx="10" cy="7" r="1" fill="#00f2fe" />
+    <circle cx="15" cy="7" r="1" fill="#00f2fe" />
+    <line x1="0" y1="12" x2="22" y2="12" />
+  </g>
+
+  <!-- Content -->
+  <text class="text-title" x="60" y="41">portfolio</text>
+  
+  <text class="text-desc" x="24" y="76">An interactive, responsive single-page web</text>
+  <text class="text-desc" x="24" y="94">application showing premium UI/UX design.</text>
+
+  <!-- Badges -->
+  <g transform="translate(24, 116)">
+    <rect class="badge-rect" x="0" y="0" width="76" height="20" />
+    <text class="badge-text" x="38" y="14" text-anchor="middle">TypeScript</text>
+
+    <rect class="badge-rect" x="84" y="0" width="52" height="20" />
+    <text class="badge-text" x="110" y="14" text-anchor="middle">React</text>
+
+    <rect class="badge-rect" x="144" y="0" width="78" height="20" />
+    <text class="badge-text" x="183" y="14" text-anchor="middle">TailwindCSS</text>
+  </g>
+
+  <!-- External Link Arrow -->
+  <g transform="translate(336, 24)" stroke="#4facfe" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="0" y1="12" x2="12" y2="0" />
+    <polyline points="5,0 12,0 12,7" fill="none" />
+  </g>
+</svg>

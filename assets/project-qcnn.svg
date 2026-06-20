@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 160" width="100%" height="160" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0b0d19" />
+      <stop offset="100%" stop-color="#06070c" />
+    </linearGradient>
+  </defs>
+  <style>
+    @keyframes pulse {
+      0%, 100% { stroke: rgba(168, 85, 247, 0.4); filter: drop-shadow(0 0 2px rgba(168, 85, 247, 0.2)); }
+      50% { stroke: rgba(255, 0, 127, 0.8); filter: drop-shadow(0 0 8px rgba(255, 0, 127, 0.4)); }
+    }
+    .card-border {
+      stroke-width: 1.5;
+      animation: pulse 4s infinite ease-in-out;
+    }
+    .text-title {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-weight: 700;
+      font-size: 15px;
+      fill: #ffffff;
+    }
+    .text-desc {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 12px;
+      fill: #94a3b8;
+    }
+    .badge-rect {
+      fill: rgba(168, 85, 247, 0.1);
+      stroke: rgba(168, 85, 247, 0.2);
+      stroke-width: 1;
+      rx: 4;
+    }
+    .badge-text {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+      fill: #a855f7;
+    }
+  </style>
+  <rect width="380" height="160" rx="12" fill="url(#bg)" stroke="#1e293b" stroke-width="1" />
+  <rect class="card-border" x="1" y="1" width="378" height="158" rx="11" fill="none" />
+
+  <!-- Icon (Neural Network Nodes) -->
+  <g transform="translate(24, 24)" stroke="#a855f7" stroke-width="2">
+    <circle cx="5" cy="5" r="3" fill="none" />
+    <circle cx="5" cy="21" r="3" fill="none" />
+    <circle cx="19" cy="13" r="3" fill="none" />
+    <line x1="8" y1="6" x2="16" y2="11" />
+    <line x1="8" y1="20" x2="16" y2="15" />
+  </g>
+
+  <!-- Content -->
+  <text class="text-title" x="60" y="41">Brain-Tumor-QCNN</text>
+  
+  <text class="text-desc" x="24" y="76">A modular hybrid computing system designed</text>
+  <text class="text-desc" x="24" y="94">to map and process high-dimensional arrays.</text>
+
+  <!-- Badges -->
+  <g transform="translate(24, 116)">
+    <rect class="badge-rect" x="0" y="0" width="56" height="20" />
+    <text class="badge-text" x="28" y="14" text-anchor="middle">Python</text>
+
+    <rect class="badge-rect" x="64" y="0" width="76" height="20" />
+    <text class="badge-text" x="102" y="14" text-anchor="middle">PennyLane</text>
+
+    <rect class="badge-rect" x="148" y="0" width="78" height="20" />
+    <text class="badge-text" x="187" y="14" text-anchor="middle">TensorFlow</text>
+  </g>
+
+  <!-- External Link Arrow -->
+  <g transform="translate(336, 24)" stroke="#ff007f" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+    <line x1="0" y1="12" x2="12" y2="0" />
+    <polyline points="5,0 12,0 12,7" fill="none" />
+  </g>
+</svg>
