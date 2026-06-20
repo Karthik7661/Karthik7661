@@ -139,16 +139,23 @@
 
 ## 🤝 Let's Connect!
 
+*Feel free to reach out for collaborations, inquiries, or just to say hello!*
+
 <p align="center">
-  <img src="assets/connect-header.svg?v=3" width="48%" alt="Let's Connect" />
   <a href="https://mail.google.com/mail/?view=cm&fs=1&to=skarthik7661@gmail.com" target="_blank">
-    <img src="assets/btn-email.svg?v=3" width="23%" alt="Email Me" />
+    <img src="assets/btn-email.svg?v=4" width="30%" alt="Email Me" />
   </a>
-  <a href="https://github.com/users/Karthik7661/follow" target="_blank">
-    <img src="assets/btn-github.svg?v=3" width="23%" alt="Follow Me" />
+  <a href="https://github.com/Karthik7661" target="_blank">
+    <img src="assets/btn-github.svg?v=4" width="30%" alt="Follow Me" />
   </a>
 </p>
 
+<div align="center">
+  <img src="assets/separator.svg?v=2" width="100%" alt="Divider" />
+</div>
+
 <p align="center">
-  <img src="assets/visitor-card.svg?v=3" width="50%" alt="Profile Views" />
+  <b>👤 Profile Views</b>
+  <br />
+  <img src="https://count.getloli.com/get/@Karthik7661?theme=moebooru" alt="Views Counter" />
 </p>
