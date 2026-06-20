@@ -47,9 +47,15 @@
     <line x1="4" y1="7" x2="18" y2="7" />
     <line x1="4" y1="13" x2="18" y2="13" />
     <line x1="4" y1="19" x2="18" y2="19" />
-    <circle cx="17" cy="7" r="0.5" fill="#00f2fe" />
-    <circle cx="17" cy="13" r="0.5" fill="#00f2fe" />
-    <circle cx="17" cy="19" r="0.5" fill="#00f2fe" />
+    <circle cx="17" cy="7" r="0.8" fill="#00f2fe">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="17" cy="13" r="0.8" fill="#00f2fe">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="1.6s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="17" cy="19" r="0.8" fill="#00f2fe">
+      <animate attributeName="opacity" values="0.2;1;0.2" dur="0.9s" repeatCount="indefinite" />
+    </circle>
   </g>
 
   <!-- Content -->

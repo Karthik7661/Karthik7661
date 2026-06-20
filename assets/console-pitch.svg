@@ -64,6 +64,30 @@
     <!-- Outer Shadow and Background -->
     <rect x="2" y="2" width="796" height="236" rx="8" fill="#0d0e15" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1.5" />
     
+    <!-- Ambient Matrix Code Rain -->
+    <g opacity="0.04" fill="#00f2fe" font-size="9" font-family="monospace">
+      <text x="120" y="-120" writing-mode="vertical-rl">
+        101011001011001101
+        <animate attributeName="y" values="-180;260" dur="12s" repeatCount="indefinite" />
+      </text>
+      <text x="240" y="-120" writing-mode="vertical-rl">
+        0110100101010011
+        <animate attributeName="y" values="-160;260" dur="8s" begin="3s" repeatCount="indefinite" />
+      </text>
+      <text x="380" y="-120" writing-mode="vertical-rl">
+        11001011100101101
+        <animate attributeName="y" values="-180;260" dur="14s" begin="6s" repeatCount="indefinite" />
+      </text>
+      <text x="520" y="-120" writing-mode="vertical-rl">
+        1001010101100110
+        <animate attributeName="y" values="-160;260" dur="10s" begin="1s" repeatCount="indefinite" />
+      </text>
+      <text x="680" y="-120" writing-mode="vertical-rl">
+        1101100110100101
+        <animate attributeName="y" values="-180;260" dur="11s" begin="4s" repeatCount="indefinite" />
+      </text>
+    </g>
+    
     <!-- Top Bar Header -->
     <path d="M 2,10 A 8,8 0 0 1 10,2 H 790 A 8,8 0 0 1 798,10 V 30 H 2 Z" fill="#16171f" />
     

@@ -43,10 +43,19 @@
 
   <!-- Icon (Module Blocks Connection) -->
   <g transform="translate(24, 24)" stroke="#a855f7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-    <rect x="0" y="4" width="8" height="18" rx="1" fill="none" />
-    <rect x="14" y="4" width="8" height="18" rx="1" fill="none" />
-    <line x1="8" y1="13" x2="14" y2="13" />
-    <circle cx="11" cy="13" r="1.5" fill="#a855f7" />
+    <rect x="0" y="4" width="8" height="18" rx="1" fill="none">
+      <animate attributeName="stroke" values="#a855f7;#ff007f;#a855f7" dur="3s" repeatCount="indefinite" />
+    </rect>
+    <rect x="14" y="4" width="8" height="18" rx="1" fill="none">
+      <animate attributeName="stroke" values="#a855f7;#ff007f;#a855f7" dur="3s" begin="1.5s" repeatCount="indefinite" />
+    </rect>
+    <line x1="8" y1="13" x2="14" y2="13">
+      <animate attributeName="stroke-dasharray" values="0,6;6,0;6,0;0,6" dur="2s" repeatCount="indefinite" />
+    </line>
+    <circle cx="11" cy="13" r="1.5" fill="#a855f7">
+      <animate attributeName="r" values="1.5;2.5;1.5" dur="1.5s" repeatCount="indefinite" />
+      <animate attributeName="fill" values="#a855f7;#ff007f;#a855f7" dur="1.5s" repeatCount="indefinite" />
+    </circle>
   </g>
 
   <!-- Content -->
