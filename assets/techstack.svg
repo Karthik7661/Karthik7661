@@ -62,8 +62,8 @@
       100% { transform: translateY(420px); opacity: 0; }
     }
     @keyframes blink {
-      0%, 100% { opacity: 0.3; filter: drop-shadow(0 0 1px #00f2fe); }
-      50% { opacity: 1; filter: drop-shadow(0 0 4px #00f2fe); }
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
     }
     @keyframes hover-card {
       0%, 100% { stroke: rgba(255, 255, 255, 0.05); }
@@ -84,9 +84,12 @@
       filter: drop-shadow(0 0 3px #00f2fe);
     }
     .status-dot {
-      fill: #00f2fe;
       animation: blink 2.5s infinite ease-in-out;
     }
+    .dot-teal { fill: #00f2fe; filter: drop-shadow(0 0 2px #00f2fe); }
+    .dot-cyan { fill: #4facfe; filter: drop-shadow(0 0 2px #4facfe); }
+    .dot-purple { fill: #a855f7; filter: drop-shadow(0 0 2px #a855f7); }
+    .dot-orange { fill: #f97316; filter: drop-shadow(0 0 2px #f97316); }
     .dot-delay-1 { animation-delay: 0.6s; }
     .dot-delay-2 { animation-delay: 1.2s; }
     .dot-delay-3 { animation-delay: 1.8s; }
@@ -154,8 +157,8 @@
     <path d="M 44,39 L 37,44 L 44,49 M 54,39 L 61,44 L 54,49 M 51,36 L 47,52" stroke="#00f2fe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
     
     <!-- Header Text -->
-    <text x="72" y="49" font-size="13" font-weight="bold" fill="#ffffff" letter-spacing="0.8">PROGRAMMING LANGUAGES</text>
-    <circle class="status-dot" cx="365" cy="44" r="3" />
+    <text x="72" y="49" font-size="13" font-weight="bold" fill="#00f2fe" letter-spacing="0.8">PROGRAMMING LANGUAGES</text>
+    <circle class="status-dot dot-teal" cx="365" cy="44" r="3" />
     <line x1="35" y1="58" x2="375" y2="58" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
 
     <!-- Rows -->
@@ -193,8 +196,8 @@
     <path d="M 428,37 h 24 v 14 h -24 z M 434,51 v 4 h 12 v -4 M 430,55 h 20" stroke="#4facfe" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none" />
 
     <!-- Header Text -->
-    <text x="462" y="49" font-size="13" font-weight="bold" fill="#ffffff" letter-spacing="0.8">FRONTEND DEVELOPMENT</text>
-    <circle class="status-dot dot-delay-1" cx="755" cy="44" r="3" />
+    <text x="462" y="49" font-size="13" font-weight="bold" fill="#4facfe" letter-spacing="0.8">FRONTEND DEVELOPMENT</text>
+    <circle class="status-dot dot-cyan dot-delay-1" cx="755" cy="44" r="3" />
     <line x1="425" y1="58" x2="765" y2="58" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
 
     <!-- Rows -->
@@ -235,8 +238,8 @@
     <path d="M 41,251 v 4 c 0,1.8 4,3 9,3 s 9,-1.2 9,-3 v -4" stroke="#a855f7" stroke-width="2" fill="none" />
 
     <!-- Header Text -->
-    <text x="72" y="249" font-size="13" font-weight="bold" fill="#ffffff" letter-spacing="0.8">BACKEND &amp; DATABASES</text>
-    <circle class="status-dot dot-delay-2" cx="365" cy="244" r="3" />
+    <text x="72" y="249" font-size="13" font-weight="bold" fill="#a855f7" letter-spacing="0.8">BACKEND &amp; DATABASES</text>
+    <circle class="status-dot dot-purple dot-delay-2" cx="365" cy="244" r="3" />
     <line x1="35" y1="258" x2="375" y2="258" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
 
     <!-- Rows (4 items, custom compact vertical spacing) -->
@@ -283,8 +286,8 @@
     <path d="M 434,250 V 240 M 434,249 Q 434,243 443,241" stroke="#f97316" stroke-width="2" fill="none" stroke-linecap="round" />
 
     <!-- Header Text -->
-    <text x="462" y="249" font-size="13" font-weight="bold" fill="#ffffff" letter-spacing="0.8">DEVOPS &amp; TOOLS</text>
-    <circle class="status-dot dot-delay-3" cx="755" cy="244" r="3" />
+    <text x="462" y="249" font-size="13" font-weight="bold" fill="#f97316" letter-spacing="0.8">DEVOPS &amp; TOOLS</text>
+    <circle class="status-dot dot-orange dot-delay-3" cx="755" cy="244" r="3" />
     <line x1="425" y1="258" x2="765" y2="258" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
 
     <!-- Rows (2 items, spaced out evenly) -->
