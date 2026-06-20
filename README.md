@@ -15,6 +15,14 @@
 
 </div>
 
+<p align="center">
+  <a href="https://portfolio-one-gules-juc6kxjk7e.vercel.app/" target="_blank">
+    <img src="assets/portfolio-btn.svg?v=2" width="100%" alt="Visit Portfolio" />
+  </a>
+</p>
+
+<br />
+
 ## 🌌 About Me
 
 <img src="assets/about.svg?v=2" width="100%" alt="About S Karthik" />
