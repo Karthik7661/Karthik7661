@@ -66,8 +66,8 @@
     <rect class="badge-rect" x="84" y="0" width="60" height="20" />
     <text class="badge-text" x="114" y="14" text-anchor="middle">Express</text>
 
-    <rect class="badge-rect" x="152" y="0" width="44" height="20" />
-    <text class="badge-text" x="174" y="14" text-anchor="middle">SQL</text>
+    <rect class="badge-rect" x="152" y="0" width="56" height="20" />
+    <text class="badge-text" x="180" y="14" text-anchor="middle">MySQL</text>
   </g>
 
   <!-- External Link Arrow -->
