@@ -16,6 +16,12 @@
 </div>
 
 <p align="center">
+  <img src="assets/console-pitch.svg?v=2" width="100%" alt="Developer Console Pitch" />
+</p>
+
+<br />
+
+<p align="center">
   <a href="https://portfolio-one-gules-juc6kxjk7e.vercel.app/" target="_blank">
     <img src="assets/portfolio-btn.svg?v=2" width="100%" alt="Visit Portfolio" />
   </a>
@@ -104,18 +110,7 @@
 ## 📊 Live GitHub Activity & Stats
 
 <p align="center">
-  <a href="https://github.com/Karthik7661">
-    <img src="https://github-readme-stats.vercel.app/api?username=Karthik7661&show_icons=true&theme=dark&bg_color=0a0b10&title_color=00f2fe&text_color=acbac7&icon_color=4facfe&border_color=1e293b" alt="Karthik's GitHub Stats" width="48%" />
-  </a>
-  <a href="https://github.com/Karthik7661">
-    <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Karthik7661&layout=compact&theme=dark&bg_color=0a0b10&title_color=00f2fe&text_color=acbac7&icon_color=4facfe&border_color=1e293b" alt="Top Languages" width="48%" />
-  </a>
-</p>
-
-<p align="center">
-  <a href="https://github.com/Karthik7661">
-    <img src="https://github-readme-streak-stats.herokuapp.com/?user=Karthik7661&theme=dark&background=0a0b10&ring=a855f7&fire=00f2fe&currStreakLabel=4facfe&sideNums=acbac7&sideLabels=94a3b8&border=1e293b" alt="GitHub Streak Stats" width="97%" />
-  </a>
+  <img src="assets/stats-dashboard.svg?v=2" width="100%" alt="System Stats Dashboard" />
 </p>
 
 <div align="center">

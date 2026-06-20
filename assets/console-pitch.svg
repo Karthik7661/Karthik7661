@@ -1,0 +1,146 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 240" width="100%" height="240" style="background: transparent; font-family: Menlo, Monaco, Consolas, 'Fira Code', monospace;">
+  <style>
+    /* CSS Animations */
+    @keyframes typing-p1 { from { width: 0; } to { width: 330px; } }
+    @keyframes typing-p2 { from { width: 0; } to { width: 350px; } }
+    @keyframes typing-p3 { from { width: 0; } to { width: 330px; } }
+    @keyframes fade-in { from { opacity: 0; } to { opacity: 1; } }
+    @keyframes cursor-appear { to { opacity: 1; } }
+    @keyframes cursor-blink { 50% { opacity: 0; } }
+
+    .clip-rect-p1 {
+      animation: typing-p1 1.2s steps(28, end) forwards;
+      animation-delay: 0.5s;
+    }
+    .clip-rect-p2 {
+      animation: typing-p2 1.2s steps(30, end) forwards;
+      animation-delay: 2.2s;
+    }
+    .clip-rect-p3 {
+      animation: typing-p3 1.2s steps(28, end) forwards;
+      animation-delay: 4.5s;
+    }
+
+    .output-1 {
+      opacity: 0;
+      animation: fade-in 0.4s forwards;
+      animation-delay: 1.8s;
+    }
+    .bullet-1 { opacity: 0; animation: fade-in 0.3s forwards; animation-delay: 3.5s; }
+    .bullet-2 { opacity: 0; animation: fade-in 0.3s forwards; animation-delay: 3.8s; }
+    .bullet-3 { opacity: 0; animation: fade-in 0.3s forwards; animation-delay: 4.1s; }
+
+    .terminal-cursor {
+      opacity: 0;
+      fill: #00f2fe;
+      animation: cursor-appear 0.1s forwards 5.7s, cursor-blink 0.8s step-end infinite 5.8s;
+    }
+    
+    .prompt-label { fill: #10b981; font-weight: bold; }
+    .prompt-cmd { fill: #ffffff; }
+    .json-key { fill: #a855f7; }
+    .json-val { fill: #00f2fe; }
+    .json-bracket { fill: #ffbd2e; }
+    .bullet-chk { fill: #10b981; font-weight: bold; }
+    .bullet-txt { fill: #acbac7; }
+    .bullet-highlight { fill: #4facfe; font-weight: 600; }
+  </style>
+
+  <defs>
+    <!-- Clip paths for typing overlays -->
+    <clipPath id="clip-p1">
+      <rect class="clip-rect-p1" x="25" y="45" width="0" height="22" />
+    </clipPath>
+    <clipPath id="clip-p2">
+      <rect class="clip-rect-p2" x="25" y="93" width="0" height="22" />
+    </clipPath>
+    <clipPath id="clip-p3">
+      <rect class="clip-rect-p3" x="25" y="177" width="0" height="22" />
+    </clipPath>
+  </defs>
+
+  <!-- Terminal Frame -->
+  <g>
+    <!-- Outer Shadow and Background -->
+    <rect x="2" y="2" width="796" height="236" rx="8" fill="#0d0e15" stroke="rgba(255, 255, 255, 0.06)" stroke-width="1.5" />
+    
+    <!-- Top Bar Header -->
+    <path d="M 2,10 A 8,8 0 0 1 10,2 H 790 A 8,8 0 0 1 798,10 V 30 H 2 Z" fill="#16171f" />
+    
+    <!-- macOS Control Buttons -->
+    <circle cx="20" cy="16" r="5" fill="#ff5f56" />
+    <circle cx="36" cy="16" r="5" fill="#ffbd2e" />
+    <circle cx="52" cy="16" r="5" fill="#27c93f" />
+    
+    <!-- Terminal Title -->
+    <text x="400" y="20" font-size="11" fill="#6c7086" text-anchor="middle" letter-spacing="0.5">skarthik@developer-terminal: ~</text>
+  </g>
+
+  <!-- Terminal Body Content -->
+  <g font-size="13" xml:space="preserve">
+    <!-- Prompt 1: cat profile.json -->
+    <g clip-path="url(#clip-p1)">
+      <text x="25" y="60">
+        <tspan class="prompt-label">skarthik@terminal:~$ </tspan>
+        <tspan class="prompt-cmd">cat profile.json</tspan>
+      </text>
+    </g>
+
+    <!-- Output 1: JSON profile details -->
+    <g class="output-1">
+      <text x="25" y="82">
+        <tspan class="json-bracket">{</tspan>
+        <tspan class="json-key"> "name":</tspan> <tspan class="json-val">"S Karthik"</tspan><tspan class="json-bracket">,</tspan>
+        <tspan class="json-key"> "role":</tspan> <tspan class="json-val">"Software Engineer"</tspan><tspan class="json-bracket">,</tspan>
+        <tspan class="json-key"> "status":</tspan> <tspan class="json-val">"Open For Opportunities"</tspan>
+        <tspan class="json-bracket"> }</tspan>
+      </text>
+    </g>
+
+    <!-- Prompt 2: ./run_diagnostics.sh -->
+    <g clip-path="url(#clip-p2)">
+      <text x="25" y="108">
+        <tspan class="prompt-label">skarthik@terminal:~$ </tspan>
+        <tspan class="prompt-cmd">./run_diagnostics.sh</tspan>
+      </text>
+    </g>
+
+    <!-- Output 2: Key Achievements / Diagnostics -->
+    <!-- Bullet 1 -->
+    <g class="bullet-1">
+      <text x="40" y="130">
+        <tspan class="bullet-chk">[✓]</tspan>
+        <tspan class="bullet-txt"> Database Query Runtimes: </tspan>
+        <tspan class="bullet-highlight">Optimized by 40%</tspan>
+        <tspan class="bullet-txt"> (MySQL &amp; MongoDB)</tspan>
+      </text>
+    </g>
+    <!-- Bullet 2 -->
+    <g class="bullet-2">
+      <text x="40" y="148">
+        <tspan class="bullet-chk">[✓]</tspan>
+        <tspan class="bullet-txt"> Core Architecture: Developed scalable </tspan>
+        <tspan class="bullet-highlight">Task &amp; Reservation Engines</tspan>
+      </text>
+    </g>
+    <!-- Bullet 3 -->
+    <g class="bullet-3">
+      <text x="40" y="166">
+        <tspan class="bullet-chk">[✓]</tspan>
+        <tspan class="bullet-txt"> Quantum AI: Engineered custom experimental </tspan>
+        <tspan class="bullet-highlight">QCNN &amp; ResNet models</tspan>
+      </text>
+    </g>
+
+    <!-- Prompt 3: start connect_now -->
+    <g clip-path="url(#clip-p3)">
+      <text x="25" y="192">
+        <tspan class="prompt-label">skarthik@terminal:~$ </tspan>
+        <tspan class="prompt-cmd">start connect_flow_now</tspan>
+      </text>
+    </g>
+
+    <!-- Terminal Cursor -->
+    <rect class="terminal-cursor" x="352" y="179" width="8" height="15" />
+  </g>
+</svg>

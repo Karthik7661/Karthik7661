@@ -1,0 +1,173 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="100%" height="300" style="background: linear-gradient(135deg, #0a0b10 0%, #12131c 100%); font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; border-radius: 10px; overflow: hidden; border: 1px solid rgba(255, 255, 255, 0.05);">
+  <style>
+    /* CSS Keyframe Animations */
+    @keyframes corner-pulse-teal {
+      0%, 100% { stroke: #00f2fe; filter: drop-shadow(0 0 1px #00f2fe); }
+      50% { stroke: #4facfe; filter: drop-shadow(0 0 3px #4facfe); }
+    }
+    @keyframes corner-pulse-purple {
+      0%, 100% { stroke: #a855f7; filter: drop-shadow(0 0 1px #a855f7); }
+      50% { stroke: #c084fc; filter: drop-shadow(0 0 3px #c084fc); }
+    }
+    @keyframes corner-pulse-orange {
+      0%, 100% { stroke: #fb923c; filter: drop-shadow(0 0 1px #fb923c); }
+      50% { stroke: #f97316; filter: drop-shadow(0 0 3px #f97316); }
+    }
+    @keyframes rotate-radar {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+    @keyframes target-blink {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; filter: drop-shadow(0 0 3px #fb923c); }
+    }
+    @keyframes scan {
+      0% { transform: translateY(0); opacity: 0; }
+      10% { opacity: 0.4; }
+      90% { opacity: 0.4; }
+      100% { transform: translateY(300px); opacity: 0; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 0.3; }
+      50% { opacity: 1; }
+    }
+
+    .corner-teal { stroke-width: 1.5; fill: none; animation: corner-pulse-teal 4s infinite ease-in-out; }
+    .corner-purple { stroke-width: 1.5; fill: none; animation: corner-pulse-purple 4s infinite ease-in-out; }
+    .corner-orange { stroke-width: 1.5; fill: none; animation: corner-pulse-orange 4s infinite ease-in-out; }
+    
+    .radar-group {
+      transform-origin: 660px 170px;
+      animation: rotate-radar 5s linear infinite;
+    }
+    .radar-target {
+      fill: #fb923c;
+      animation: target-blink 2s infinite ease-in-out;
+    }
+    .target-1 { animation-delay: 0.2s; }
+    .target-2 { animation-delay: 0.8s; }
+    .target-3 { animation-delay: 1.4s; }
+    .target-4 { animation-delay: 0.5s; }
+
+    .status-dot-teal { fill: #00f2fe; filter: drop-shadow(0 0 2px #00f2fe); animation: blink 2s infinite ease-in-out; }
+    .status-dot-purple { fill: #a855f7; filter: drop-shadow(0 0 2px #a855f7); animation: blink 2s infinite ease-in-out; animation-delay: 0.6s; }
+    .status-dot-orange { fill: #fb923c; filter: drop-shadow(0 0 2px #fb923c); animation: blink 2s infinite ease-in-out; animation-delay: 1.2s; }
+
+    .scanline {
+      animation: scan 8s linear infinite;
+      filter: drop-shadow(0 0 3px #00f2fe);
+    }
+    .hud-panel {
+      fill: rgba(10, 11, 16, 0.7);
+      stroke: rgba(255, 255, 255, 0.05);
+      stroke-width: 1;
+    }
+    .panel-text {
+      font-family: Menlo, Monaco, Consolas, monospace;
+      font-size: 11px;
+      fill: #acbac7;
+    }
+  </g>
+
+  <!-- Background Decorative Grid -->
+  <g stroke="#4facfe" stroke-width="0.5" opacity="0.04">
+    <path d="M 0,50 L 800,50 M 0,100 L 800,100 M 0,150 L 800,150 M 0,200 L 800,200 M 0,250 L 800,250" />
+    <path d="M 100,0 L 100,300 M 200,0 L 200,300 M 300,0 L 300,300 M 400,0 L 400,300 M 500,0 L 500,300 M 600,0 L 600,300 M 700,0 L 700,300" />
+  </g>
+
+  <!-- Card 1: System Specs -->
+  <g>
+    <rect class="hud-panel" x="20" y="20" width="240" height="260" rx="8" />
+    <!-- Corner Brackets -->
+    <path class="corner-teal" d="M 20,32 L 20,20 L 32,20" />
+    <path class="corner-teal" d="M 248,20 L 260,20 L 260,32" />
+    <path class="corner-teal" d="M 20,268 L 20,280 L 32,280" />
+    <path class="corner-teal" d="M 248,280 L 260,280 L 260,268" />
+    
+    <!-- Header -->
+    <path d="M 44,37 M 40,40 h 12 v 12 H 40 Z" stroke="#00f2fe" stroke-width="1.5" fill="none" />
+    <circle cx="46" cy="46" r="2" fill="#00f2fe" />
+    <text x="65" y="49" font-size="12" font-weight="bold" fill="#00f2fe" letter-spacing="1">SYSTEM SPECS</text>
+    <circle class="status-dot-teal" cx="240" cy="44" r="3" />
+    <line x1="30" y1="58" x2="250" y2="58" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- Details -->
+    <text class="panel-text" x="35" y="85">&gt; OS: Carbon Based / Brain</text>
+    <text class="panel-text" x="35" y="120">&gt; CPU: Hyper-Focus Core</text>
+    <text class="panel-text" x="35" y="155">&gt; RAM: Multi-Threaded</text>
+    <text class="panel-text" x="35" y="190">&gt; GPU: Creative UI Eng</text>
+    <text class="panel-text" x="35" y="225">&gt; STORAGE: 100+ Repos</text>
+    <text class="panel-text" x="35" y="255" fill="#00f2fe" opacity="0.6">&gt; STATUS: Operational</text>
+  </g>
+
+  <!-- Card 2: Code Integrity -->
+  <g>
+    <rect class="hud-panel" x="280" y="20" width="240" height="260" rx="8" />
+    <!-- Corner Brackets -->
+    <path class="corner-purple" d="M 280,32 L 280,20 L 292,20" />
+    <path class="corner-purple" d="M 508,20 L 520,20 L 520,32" />
+    <path class="corner-purple" d="M 280,268 L 280,280 L 292,280" />
+    <path class="corner-purple" d="M 508,280 L 520,280 L 520,268" />
+    
+    <!-- Header -->
+    <path d="M 302,39 L 306,49 L 314,41" stroke="#a855f7" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+    <text x="325" y="49" font-size="12" font-weight="bold" fill="#a855f7" letter-spacing="1">CODE INTEGRITY</text>
+    <circle class="status-dot-purple" cx="500" cy="44" r="3" />
+    <line x1="290" y1="58" x2="510" y2="58" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- Details -->
+    <text class="panel-text" x="295" y="85">&gt; QUALITY: A+ Verified</text>
+    <text class="panel-text" x="295" y="120">&gt; PASS_RATE: 100%</text>
+    <text class="panel-text" x="295" y="155">&gt; COMMITS: High / Stable</text>
+    <text class="panel-text" x="295" y="190">&gt; HOURS: Night Owl Mode</text>
+    <text class="panel-text" x="295" y="225">&gt; SYNC_STATE: Online</text>
+    <text class="panel-text" x="295" y="255" fill="#a855f7" opacity="0.6">&gt; HOST: Github.Server</text>
+  </g>
+
+  <!-- Card 3: Cognitive Index -->
+  <g>
+    <rect class="hud-panel" x="540" y="20" width="240" height="260" rx="8" />
+    <!-- Corner Brackets -->
+    <path class="corner-orange" d="M 540,32 L 540,20 L 552,20" />
+    <path class="corner-orange" d="M 768,20 L 780,20 L 780,32" />
+    <path class="corner-orange" d="M 540,268 L 540,280 L 552,280" />
+    <path class="corner-orange" d="M 768,280 L 780,280 L 780,268" />
+    
+    <!-- Header -->
+    <circle cx="560" cy="45" r="7" stroke="#fb923c" stroke-width="1.5" fill="none" />
+    <line x1="560" y1="45" x2="564" y2="41" stroke="#fb923c" stroke-width="1.5" />
+    <text x="585" y="49" font-size="12" font-weight="bold" fill="#fb923c" letter-spacing="1">COGNITIVE INDEX</text>
+    <circle class="status-dot-orange" cx="760" cy="44" r="3" />
+    <line x1="550" y1="58" x2="770" y2="58" stroke="rgba(255, 255, 255, 0.08)" stroke-width="1" />
+
+    <!-- Radar Sweep Graphics -->
+    <circle cx="660" cy="170" r="60" stroke="rgba(251, 146, 60, 0.2)" stroke-width="1" fill="none" />
+    <circle cx="660" cy="170" r="40" stroke="rgba(251, 146, 60, 0.15)" stroke-width="1" fill="none" stroke-dasharray="2, 4" />
+    <circle cx="660" cy="170" r="20" stroke="rgba(251, 146, 60, 0.1)" stroke-width="1" fill="none" />
+    <circle cx="660" cy="170" r="3" fill="#fb923c" />
+    <line x1="590" y1="170" x2="730" y2="170" stroke="rgba(251, 146, 60, 0.15)" stroke-width="0.75" stroke-dasharray="4, 4" />
+    <line x1="660" y1="100" x2="660" y2="240" stroke="rgba(251, 146, 60, 0.15)" stroke-width="0.75" stroke-dasharray="4, 4" />
+
+    <!-- Rotating Radar Group -->
+    <g class="radar-group">
+      <path d="M 660,170 L 660,110 A 60,60 0 0,1 702,128 Z" fill="rgba(251, 146, 60, 0.15)" />
+      <line x1="660" y1="170" x2="660" y2="110" stroke="#fb923c" stroke-width="1.5" />
+    </g>
+
+    <!-- Radar Blinking Targets -->
+    <circle class="radar-target target-1" cx="635" cy="145" r="3.5" />
+    <text x="612" y="148" font-size="8" fill="#fb923c" opacity="0.7" font-family="monospace" font-weight="bold">JAVA</text>
+
+    <circle class="radar-target target-2" cx="682" cy="135" r="3.5" />
+    <text x="689" y="138" font-size="8" fill="#fb923c" opacity="0.7" font-family="monospace" font-weight="bold">SQL</text>
+
+    <circle class="radar-target target-3" cx="645" cy="195" r="3.5" />
+    <text x="630" y="205" font-size="8" fill="#fb923c" opacity="0.7" font-family="monospace" font-weight="bold">FE</text>
+
+    <circle class="radar-target target-4" cx="695" cy="180" r="3.5" />
+    <text x="702" y="183" font-size="8" fill="#fb923c" opacity="0.7" font-family="monospace" font-weight="bold">BE</text>
+  </g>
+
+  <!-- Horizontal Laser Scan Line -->
+  <line class="scanline" x1="0" y1="0" x2="800" y2="0" stroke="rgba(0, 242, 254, 0.12)" stroke-width="1.5" />
+</svg>
